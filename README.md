@@ -38,7 +38,7 @@ plasma-desktop plasma-nm plasma-pa bluedevil kscreen kwalletmanager spectacle kd
 ```
 > Hyprland
 ```
-hyprland uwsm pipewire wireplumber xdg-desktop-portal-hyprland hyprpolkitagent qt5-wayland qt6-wayland brightnessctl playerctl mako (or dunst) wofi (or walker) udiskie (libappindicator-gtk3 if udiskie dont pop-up)
+hyprland uwsm pipewire wireplumber xdg-desktop-portal-hyprland hyprpolkitagent qt5-wayland qt6-wayland waybar brightnessctl playerctl mako (or dunst) wofi (or walker) udiskie (libappindicator-gtk3 if udiskie dont pop-up)
 ```
 </details>
 
@@ -47,7 +47,7 @@ hyprland uwsm pipewire wireplumber xdg-desktop-portal-hyprland hyprpolkitagent q
   
 > System utilities
 ```
-base-devel git kitty yazi (or superfile) trashcli cliphist (xdg-utils image and mime inferance) noto-fonts-cjk unrar wget fuse2 btop fastfetch mpv phonon-qt6-mpv?
+base-devel git kitty yazi trashcli noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra unrar wget fuse2 btop fastfetch mpv phonon-qt6-mpv?
 ```
 > Programs
 ```
@@ -55,8 +55,7 @@ keepassxc chromium krita qbittorrent obs-studio lutris dolphin-emu
 ```
 > AUR
 ```
-qview (optional: kimageformats qt6-imageformats qt6-svg) pogeket ares-emu-git cemu-git duckstation-git pcsx2-git
-https://github.com/talwat/pokeget-rs
+walker (optional not aur: wl-clipboard libqalculate) clipse (optional not aur: wl-clipboard) qview (optional not aur: kimageformats qt6-imageformats qt6-svg) ares-emu-git cemu-git duckstation-git pcsx2-git
 ```
 </details>
 
@@ -268,19 +267,19 @@ LockOnStart=true
 ```
 [Added Associations]
 application/json=micro.desktop;/home/kuriboh/.local/share/applications/Micro.desktop;
-application/pdf=chromium.desktop;
+application/pdf=chromium.desktop;com.interversehq.qView.desktop;pqiv.desktop;
 application/x-docbook+xml=micro.desktop;/home/kuriboh/.local/share/applications/Micro.desktop;chromium.desktop;
 application/x-matroska=mpv.desktop;
 application/x-yaml=micro.desktop;/home/kuriboh/.local/share/applications/Micro.desktop;
-image/avif=qimgv.desktop;mpv.desktop;
-image/bmp=qimgv.desktop;mpv.desktop;
-image/gif=qimgv.desktop;org.kde.gwenview.desktop;chromium.desktop;krita_gif.desktop;feh.desktop;
-image/heif=qimgv.desktop;mpv.desktop;
-image/jpeg=qimgv.desktop;mpv.desktop;
-image/png=qimgv.desktop;mpv.desktop;
-image/webp=qimgv.desktop;mpv.desktop;
-image/x-icns=qimgv.desktop;mpv.desktop;
-inode/directory=yazi.desktop;
+image/avif=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
+image/bmp=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
+image/gif=com.interversehq.qView.desktop;qimgv.desktop;imv.desktop;nsxiv.desktop;pqiv.desktop;feh.desktop;imv-dir.desktop;org.kde.gwenview.desktop;chromium.desktop;krita_gif.desktop;
+image/heif=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
+image/jpeg=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
+image/png=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
+image/webp=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
+image/x-icns=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
+inode/directory=yazi.desktop;spf.desktop;
 text/markdown=micro.desktop;/home/kuriboh/.local/share/applications/Micro.desktop;
 text/plain=micro.desktop;/home/kuriboh/.local/share/applications/Micro.desktop;Micro.desktop;
 text/x-cmake=micro.desktop;/home/kuriboh/.local/share/applications/Micro.desktop;
@@ -323,14 +322,14 @@ application/pdf=chromium.desktop;
 application/x-docbook+xml=micro.desktop;
 application/x-matroska=mpv.desktop;
 application/x-yaml=micro.desktop;
-image/avif=qimgv.desktop;
-image/bmp=qimgv.desktop;
-image/gif=qimgv.desktop;
-image/heif=qimgv.desktop;
-image/jpeg=qimgv.desktop;
-image/png=qimgv.desktop;
-image/webp=qimgv.desktop;
-image/x-icns=qimgv.desktop;
+image/avif=com.interversehq.qView.desktop;
+image/bmp=com.interversehq.qView.desktop;
+image/gif=com.interversehq.qView.desktop;
+image/heif=com.interversehq.qView.desktop;
+image/jpeg=com.interversehq.qView.desktop;
+image/png=com.interversehq.qView.desktop;
+image/webp=com.interversehq.qView.desktop;
+image/x-icns=com.interversehq.qView.desktop;
 inode/directory=yazi.desktop;
 text/markdown=micro.desktop;
 text/plain=micro.desktop;
