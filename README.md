@@ -1,6 +1,33 @@
 # literate-octo-pancake
 Arch Linux installation.
 
+## Commands
+  <details>
+    <summary>1. Pacman</summary>
+
+> Pacman
+```
+-Syu (update everything)
+-Qdt (list all packages no longer required as dependencies "orphans")
+-Rs package_name (remove a package and its dependencies which are not required by any other installed package)
+-Rsc package_name (remove a package, its dependencies and all the packages that depend on the target package)
+```
+</details>
+
+<details>
+  <summary>2. Mounting</summary>
+  
+> Mount SD card
+```
+doas mkdir /run/media/kuriboh/sd-card
+doas mount /dev/sd1 /run/media/kuriboh/sd-card
+```
+</details>
+
+
+
+
+
 ## Packages
   <details>
     <summary>1. Enviroment</summary>
@@ -24,7 +51,11 @@ base-devel git ghostty yazi trashcli wl-clipboard noto-fonts-cjk unrar wget fuse
 ```
 > Programs
 ```
-chromium krita qbittorrent obs-studio lutris
+keepassxc chromium krita qbittorrent obs-studio lutris dolphin-emu
+```
+> AUR
+```
+ares-emu-git cemu-git duckstation-git pcsx2-git 
 ```
 </details>
 
@@ -215,6 +246,18 @@ makepkg -si
 yay -Y --gendb
 yay -Syu --devel
 yay -Y --devel --save
+```
+</details>
+
+<details>
+  <summary>9. Plasma lock screen</summary>
+
+> Locks the screen immediately after login
+```
+micro ~/.config/kscreenlockerrc
+
+[Daemon]
+LockOnStart=true
 ```
 </details>
 </details>
