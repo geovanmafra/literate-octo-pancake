@@ -38,7 +38,7 @@ plasma-desktop plasma-nm plasma-pa bluedevil kscreen kwalletmanager spectacle kd
 ```
 > Hyprland
 ```
-xxx
+hyprland uwsm pipewire wireplumber xdg-desktop-portal-hyprland hyprpolkitagent qt5-wayland qt6-wayland brightnessctl playerctl mako (or dunst) wofi (or walker) udiskie (libappindicator-gtk3 if udiskie dont pop-up)
 ```
 </details>
 
@@ -47,7 +47,7 @@ xxx
   
 > System utilities
 ```
-base-devel git ghostty yazi trashcli wl-clipboard noto-fonts-cjk unrar wget fuse2 btop fastfetch mpv phonon-qt6-mpv?
+base-devel git kitty yazi (or superfile) trashcli cliphist (xdg-utils image and mime inferance) noto-fonts-cjk unrar wget fuse2 btop fastfetch mpv phonon-qt6-mpv?
 ```
 > Programs
 ```
