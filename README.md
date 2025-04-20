@@ -32,10 +32,6 @@ doas mount /dev/sd1 /run/media/kuriboh/sd-card
   <details>
     <summary>1. Enviroment</summary>
 
-> Plasma
-```
-plasma-desktop plasma-nm plasma-pa bluedevil kscreen kwalletmanager spectacle kdialog isoimagewriter
-```
 > Hyprland
 ```
 hyprland xdg-desktop-portal-hyprland hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper pipewire pipewire-alsa wireplumber qt5-wayland qt6-wayland uwsm waybar brightnessctl playerctl mako walker (aur) udiskie network-manager-applet wl-clipboard grim slurp kitty
@@ -55,7 +51,7 @@ keepassxc chromium krita qbittorrent obs-studio lutris dolphin-emu
 ```
 > AUR
 ```
-walker qview ares-emu-git cemu-git duckstation-git pcsx2-git
+walker qview ares-emu cemu duckstation pcsx2
 ```
 </details>
 
