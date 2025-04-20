@@ -1,5 +1,5 @@
 # literate-octo-pancake
-Arch Linux installation.
+For personal use | Arch Linux installation with all the packages I use and configurations.
 
 ## Commands
   <details>
