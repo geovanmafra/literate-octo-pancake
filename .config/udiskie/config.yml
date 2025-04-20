@@ -1,0 +1,9 @@
+program_options:
+  tray: true              # Show tray icon
+  notify: true           # Enable notifications
+  automount: false        # Enable automatic mounting
+  file_manager: xdg-open # Program to open mounted directories
+
+notifications:
+  timeout: 1.5           # Notification timeout in seconds
+  device_mounted: 5      # Show mount notifications for 5 seconds
