@@ -34,11 +34,11 @@ doas mount /dev/sd1 /run/media/kuriboh/sd-card
 
 > Plasma
 ```
-plasma-desktop plasma-nm plasma-pa bluedevil kscreen kwalletmanager spectacle kdialog flatpak-kcm isoimagewriter ark
+plasma-desktop plasma-nm plasma-pa bluedevil kscreen kwalletmanager spectacle kdialog isoimagewriter
 ```
 > Hyprland
 ```
-hyprland uwsm pipewire wireplumber xdg-desktop-portal-hyprland hyprpolkitagent qt5-wayland qt6-wayland waybar brightnessctl playerctl mako (or dunst) wofi (or walker) udiskie (libappindicator-gtk3 if udiskie dont pop-up)
+hyprland xdg-desktop-portal-hyprland hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper pipewire pipewire-alsa wireplumber qt5-wayland qt6-wayland uwsm waybar brightnessctl playerctl mako walker (aur) udiskie network-manager-applet wl-clipboard grim slurp kitty
 ```
 </details>
 
@@ -47,7 +47,7 @@ hyprland uwsm pipewire wireplumber xdg-desktop-portal-hyprland hyprpolkitagent q
   
 > System utilities
 ```
-base-devel git kitty yazi trashcli noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra unrar wget fuse2 btop fastfetch mpv phonon-qt6-mpv?
+git wget kitty yazi trashcli noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra unrar btop fastfetch mpv fuse2 (for appimage)
 ```
 > Programs
 ```
@@ -55,7 +55,7 @@ keepassxc chromium krita qbittorrent obs-studio lutris dolphin-emu
 ```
 > AUR
 ```
-walker (optional not aur: wl-clipboard libqalculate) clipse (optional not aur: wl-clipboard) qview (optional not aur: kimageformats qt6-imageformats qt6-svg) ares-emu-git cemu-git duckstation-git pcsx2-git
+walker qview ares-emu-git cemu-git duckstation-git pcsx2-git
 ```
 </details>
 
@@ -417,7 +417,7 @@ swapon /dev/nvme0n1p3
   
 ### Install essential packages
 ```
-pacstrap -K /mnt base linux-zen linux-zen-headers linux-firmware sof-firmware amd-ucode micro opendoas networkmanager xfsprogs
+pacstrap -K /mnt base linux-zen linux-zen-headers linux-firmware sof-firmware amd-ucode micro base-devel networkmanager xfsprogs
 ```
 </details>
 
