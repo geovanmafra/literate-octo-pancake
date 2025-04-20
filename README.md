@@ -68,7 +68,7 @@ wine wine-mono winetricks lib32-gnutls
 ```
 > Drivers
 ```
-mesa lib32-mesa mesa-utils vulkan-radeon lib32-vulkan-radeon
+mesa lib32-mesa mesa-utils vulkan-radeon lib32-vulkan-radeon gamescope
 ```
 > Vulkan utilities
 ```
