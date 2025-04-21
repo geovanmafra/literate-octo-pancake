@@ -51,7 +51,7 @@ keepassxc chromium krita qbittorrent obs-studio lutris dolphin-emu
 ```
 > AUR
 ```
-walker qview ares-emu cemu duckstation pcsx2
+walker qview ares-emu cemu-git duckstation-git pcsx2
 ```
 </details>
 
