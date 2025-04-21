@@ -55,7 +55,7 @@ Icons: git clone https://github.com/vinceliuice/Colloid-icon-theme ./install.sh 
 ```
 > System utilities
 ```
-git wget kitty yazi trashcli unrar btop fastfetch mpv fuse2 (for appimage)
+git wget ghostty yazi trashcli unrar btop fastfetch mpv fuse2 (for appimage)
 ```
 </details>
 
