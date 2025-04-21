@@ -127,7 +127,7 @@ if [ -z "${WAYLAND_DISPLAY}" ] && [ "$(tty)" = "/dev/tty1" ]; then
     exec hyprland
 fi
 
-UWSM session
+UWSM session:
 micro ~/.bash_profile
 
 if uwsm check may-start; then
@@ -161,18 +161,7 @@ IPV6: 2606:4700:4700::1111, 2606:4700:4700::1001
 </details>
 
 <details>
-  <summary>5. Ghostty</summary>
-
-> Terminal emulator
-```
-theme = Twilight
-#gtk-adwaita = false
-#window-decoration = true
-```
-</details>
-
-<details>
-  <summary>6. Micro</summary>
+  <summary>5. Micro</summary>
 
 > Text editor
 ```
@@ -181,7 +170,7 @@ set colorscheme twilight
 </details>
 
 <details>
-  <summary>7. Yazi</summary>
+  <summary>6. Yazi</summary>
 
 > File manager
 ```
@@ -231,7 +220,7 @@ append_rules = [
 </details>
 
 <details>
-  <summary>8. Chromium</summary>
+  <summary>7. Chromium</summary>
 
 > Extensions
 ```
@@ -244,7 +233,7 @@ Dark Reader
 </details>
 
 <details>
-  <summary>9. yay</summary>
+  <summary>8. yay</summary>
 
 > AUR helper
 ```
@@ -260,7 +249,7 @@ yay -Y --devel --save
 ```
 </details>
 <details>
-  <summary>10. Mime</summary>
+  <summary>9. Mime</summary>
 
 > .config/mimeapps.list
 ```
