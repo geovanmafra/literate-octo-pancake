@@ -14,16 +14,6 @@ For personal use | Arch Linux installation with all the packages I use and confi
 ```
 </details>
 
-<details>
-  <summary>2. Mounting</summary>
-  
-> Mount SD card
-```
-doas mkdir /run/media/kuriboh/sd-card
-doas mount /dev/sd1 /run/media/kuriboh/sd-card
-```
-</details>
-
 
 
 
@@ -151,7 +141,7 @@ fi
 
 > Nostalgic downloading emoji + MULTILIB support
 ```
-doas micro /etc/pacman.conf
+sudo micro /etc/pacman.conf
 
 Color
 ILoveCandy
@@ -406,6 +396,13 @@ timedatectl set-timezone America/Sao_Paulo
 ### Format the partitions
 ```
 cfdisk -z /dev/nvme0n1
+GPT
+128M EFI SYSTEM PARTITION p1
+512M LINUX EXTENDED BOOT p2
+4G LINUX SWAP p3
+MAX LINUX x86_64 ROOT p4
+```
+```
 mkfs.xfs /dev/nvme0n1p4
 mkswap /dev/nvme0n1p3
 mkfs.fat -F 32 /dev/nvme0n1p2
