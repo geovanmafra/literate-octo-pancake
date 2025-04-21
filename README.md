@@ -36,6 +36,14 @@ doas mount /dev/sd1 /run/media/kuriboh/sd-card
 ```
 hyprland xdg-desktop-portal-hyprland hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper qt5-wayland qt6-wayland uwsm
 ```
+>systemctl
+```
+systemctl --user enable --now waybar.service
+systemctl --user enable hyprpolkitagent.service
+systemctl --user enable --now hyprpaper.service
+systemctl --user enable --now hypridle.service
+systemctl enable --now blueetoth.service
+```
 >Audio
 ```
 pipewire lib32-pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
@@ -46,23 +54,24 @@ waybar (brightnessctl playerctl) mako wl-clipboard grim slurp [AUR: walker qview
 ```
 >Applets
 ```
-network-manager-applet blueman udiskie [AUR: pwvucontrol]
+udiskie network-manager-applet blueman [AUR: pwvucontrol]
 ```
 >Theming
 ```
 nwg-look (gtk-engine-murrine gnome-themes-extra or gnome-themes-standard [build dependency: sassc)
+Fonts: noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
 Theme: git clone https://github.com/vinceliuice/Colloid-gtk-theme ./install.sh --tweaks black rimless -n Everforest -t green -c dark -l
 Icons: git clone https://github.com/vinceliuice/Colloid-icon-theme ./install.sh -s everforest -t green
+```
+> System utilities
+```
+git wget kitty yazi trashcli unrar btop fastfetch mpv fuse2 (for appimage)
 ```
 </details>
 
 <details>
   <summary>2. Essential</summary>
   
-> System utilities
-```
-git wget kitty yazi trashcli noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra unrar btop fastfetch mpv fuse2 (for appimage)
-```
 > Programs
 ```
 keepassxc chromium krita qbittorrent obs-studio
