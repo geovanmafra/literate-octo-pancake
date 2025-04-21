@@ -34,7 +34,7 @@ doas mount /dev/sd1 /run/media/kuriboh/sd-card
 
 > Hyprland
 ```
-hyprland xdg-desktop-portal-hyprland hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper pipewire pipewire-alsa wireplumber qt5-wayland qt6-wayland uwsm waybar brightnessctl playerctl mako walker (aur) udiskie network-manager-applet blueman wl-clipboard grim slurp kitty
+hyprland xdg-desktop-portal-hyprland hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper pipewire lib32-pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber qt5-wayland qt6-wayland uwsm waybar brightnessctl playerctl mako walker (aur) udiskie network-manager-applet blueman wl-clipboard grim slurp kitty
 ```
 </details>
 
