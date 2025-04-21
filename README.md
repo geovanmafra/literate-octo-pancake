@@ -36,10 +36,10 @@ doas mount /dev/sd1 /run/media/kuriboh/sd-card
 ```
 hyprland xdg-desktop-portal-hyprland hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper qt5-wayland qt6-wayland uwsm
 ```
->systemctl
+>Services
 ```
 systemctl --user enable --now waybar.service
-systemctl --user enable hyprpolkitagent.service
+systemctl --user enable --now hyprpolkitagent.service
 systemctl --user enable --now hyprpaper.service
 systemctl --user enable --now hypridle.service
 systemctl enable --now blueetoth.service
@@ -110,7 +110,7 @@ vulkan-icd-loader lib32-vulkan-icd-loader vulkan-tools
 
 > Create HOME folders
 ```
-doas pacman -S xdg-user-dirs
+sudo pacman -S xdg-user-dirs
 
 xdg-user-dirs-update
 ```
@@ -121,23 +121,23 @@ xdg-user-dirs-update
   
 > Log into bash automatically
 ```
-doas mkdir -p /etc/systemd/system/getty@tty1.service.d
-doas micro /etc/systemd/system/getty@tty1.service.d/autologin.conf
+sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
+sudo micro /etc/systemd/system/getty@tty1.service.d/autologin.conf
 
 [Service]
 ExecStart=
 ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin kuriboh %I $TERM
 ```
-> Start Plasma session
+> Start Hyprland session
 ```
+Normal session:
 micro ~/.bash_profile
 
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "$(tty)" = "/dev/tty1" ]; then
-    exec /usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland
+    exec hyprland
 fi
-```
->Start Hyprland session
-```
+
+UWSM session
 micro ~/.bash_profile
 
 if uwsm check may-start; then
@@ -176,8 +176,6 @@ IPV6: 2606:4700:4700::1111, 2606:4700:4700::1001
 > Terminal emulator
 ```
 theme = Twilight
-background-opacity = 0.8
-confirm-close-surace = false
 #gtk-adwaita = false
 #window-decoration = true
 ```
@@ -269,18 +267,6 @@ makepkg -si
 yay -Y --gendb
 yay -Syu --devel
 yay -Y --devel --save
-```
-</details>
-
-<details>
-  <summary>9. Plasma lock screen</summary>
-
-> Locks the screen immediately after login
-```
-micro ~/.config/kscreenlockerrc
-
-[Daemon]
-LockOnStart=true
 ```
 </details>
 <details>
@@ -508,31 +494,19 @@ useradd -m -G wheel -s /bin/bash kuriboh
 ```
 passwd kuriboh
 ```
-### Enable OpenDoas
+### Enable Sudo
 > To allow members of group wheel to run commands as other users, create a configuration file with the following content:
 ```
-micro /etc/doas.conf
+EDITOR=micro visudo
 ```
+>Add this line (it's on the end of the file)
 ```
-permit setenv {PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin} :wheel
-```
-> Allow members of the wheel group to run graphical applications and to access the user's locale using the setenv option:
-```
-permit setenv { XAUTHORITY LANG LC_ALL } :wheel
-```
-### The owner and group for /etc/doas.conf should both be 0, file permissions should be set to 0400:
-```
-chown -c root:root /etc/doas.conf
-chmod -c 0400 /etc/doas.conf
-```
-> For a smooth transition from sudo to doas and to stay downward compatible, you could symlink doas to where sudo would normally be:
-```
-ln -s $(which doas) /usr/bin/sudo
+%wheel      ALL=(ALL:ALL) ALL
 ```
 ### Test escalated permissions
 ```
 su kuriboh
-doas pacman -Syu
+sudo pacman -Syu
 exit
 ```
 </details>
