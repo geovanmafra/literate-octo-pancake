@@ -34,7 +34,25 @@ doas mount /dev/sd1 /run/media/kuriboh/sd-card
 
 > Hyprland
 ```
-hyprland xdg-desktop-portal-hyprland hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper pipewire lib32-pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber qt5-wayland qt6-wayland uwsm waybar brightnessctl playerctl mako walker (aur) udiskie network-manager-applet blueman wl-clipboard grim slurp kitty
+hyprland xdg-desktop-portal-hyprland hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper qt5-wayland qt6-wayland uwsm
+```
+>Audio
+```
+pipewire lib32-pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
+```
+>Other
+```
+waybar (brightnessctl playerctl) mako wl-clipboard grim slurp [AUR: walker qview]
+```
+>Applets
+```
+network-manager-applet blueman udiskie [AUR: pwvucontrol]
+```
+>Theming
+```
+nwg-look (gtk-engine-murrine gnome-themes-extra or gnome-themes-standard [build dependency: sassc)
+Theme: git clone https://github.com/vinceliuice/Colloid-gtk-theme ./install.sh --tweaks black rimless -n Everforest -t green -c dark -l
+Icons: git clone https://github.com/vinceliuice/Colloid-icon-theme ./install.sh -s everforest -t green
 ```
 </details>
 
@@ -47,17 +65,17 @@ git wget kitty yazi trashcli noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fon
 ```
 > Programs
 ```
-keepassxc chromium krita qbittorrent obs-studio lutris dolphin-emu
-```
-> AUR
-```
-walker qview pwvucontrol ares-emu cemu-git duckstation-git pcsx2
+keepassxc chromium krita qbittorrent obs-studio
 ```
 </details>
 
 <details>
-  <summary>4. Drivers and Windows compatibility layer</summary>
-  
+  <summary>3. Drivers and Windows compatibility layer</summary>
+
+> Gaming
+```
+lutris dolphin-emu [AUR: ares-emu cemu-git duckstation-git pcsx2]
+```
 > Wine
 ```
 wine wine-mono winetricks lib32-gnutls
