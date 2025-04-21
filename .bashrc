@@ -9,6 +9,20 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-if [[ "$TERM" == "xterm-kitty" ]]; then
+#Sudo auto complete
+complete -cf sudo
+#Theme for micro
+export "MICRO_TRUECOLOR=1"
+#Fastfetch
+if [[ "$TERM" == "xterm-kitty" && ! -f "$HOME/.fastfetch_done" ]]; then
 	fastfetch
+	touch "$HOME/.fastfetch_done"
+fi
+#Check if any terminal is still running and remove the flag file only when no other terminal processes are running
+if [[ "$TERM" == "xterm-kitty" ]]; then
+trap '
+if ! pgrep -x "xterm-kitty" > /dev/null; then
+	rm -f "$HOME/.fastfetch_done"
+	fi
+	' EXIT
 fi
