@@ -11,8 +11,10 @@ PS1='[\u@\h \W]\$ '
 
 #Sudo auto complete
 complete -cf sudo
+
 #Theme for micro
 export "MICRO_TRUECOLOR=1"
+
 #Fastfetch
 if [[ "$TERM" == "xterm-ghostty" && ! -f "$HOME/.fastfetch_done" ]]; then
 	fastfetch
