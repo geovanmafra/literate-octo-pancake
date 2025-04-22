@@ -1,0 +1,92 @@
+{
+    "layer": "bottom",
+    "output": ["HDMI-A-1"],
+    "position": "top",
+    "height": 36,
+    "spacing": 4,
+    "exclusive": true,
+    "passthrough": false,
+    "fixed-center": true,
+
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": [
+        "tray",
+        "pulseaudio"
+    ],
+
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "all-outputs": true,
+        "disable-scroll": false,
+        "active-only": false,
+        "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "10":""
+
+        }
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "rewrite": {
+            "(.{42}).*": "$1.."
+        },
+        "icon": true,
+        "icon-size": 22
+    },
+
+    "tray": {
+        "show-passive-items": true,
+        "spacing": 10
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p | %A, %B %d}",
+        "tooltip-format": "{:%Y-%m-%d %H:%M:%S}",
+        "format-alt": "{:%H:%M | %d-%m-%Y}"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "  muted",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": "󰂑",
+            "headset": "󰂑",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [" ", " ", " "]
+        },
+        "on-click": "pwvucontrol"
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "on-click": "pwvucontrol",
+        "tooltip-format": "{source_desc} | {source_volume}%"
+    },
+
+    "custom/sep": {
+        "format": "|",
+        "tooltip": false
+    },
+
+    "custom/power": {
+        "tooltip": false,
+        "format": "⏻ "
+    }
+}
+
