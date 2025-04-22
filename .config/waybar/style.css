@@ -5,8 +5,8 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    background-color: rgba(43, 48, 59, 0);
+    border-bottom: 3px solid rgba(100, 114, 125, 0);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -42,6 +42,10 @@ button {
     border-radius: 0;
 }
 
+* {
+	border-radius: 4px
+}
+
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
@@ -64,7 +68,7 @@ button:hover {
 }
 
 #workspaces button.active {
-    background-color: #64727D;
+    background-color: transparent;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -114,7 +118,7 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: transparent;
 }
 
 #battery {
@@ -124,7 +128,7 @@ button:hover {
 
 #battery.charging, #battery.plugged {
     color: #ffffff;
-    background-color: #26A65B;
+    background-color: transparent;
 }
 
 @keyframes blink {
@@ -150,18 +154,18 @@ button:hover {
 }
 
 #power-profiles-daemon.performance {
-    background-color: #f53c3c;
+    background-color: transparent;
     color: #ffffff;
 }
 
 #power-profiles-daemon.balanced {
-    background-color: #2980b9;
+    background-color: transparent;
     color: #ffffff;
 }
 
 #power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 label:focus {
@@ -169,12 +173,12 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: transparent;
 }
 
 #disk {
@@ -204,8 +208,8 @@ label:focus {
 }
 
 #wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 #wireplumber.muted {
@@ -235,7 +239,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: transparent;
 }
 
 #tray > .passive {
@@ -248,12 +252,12 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    background-color: transparent;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 #mpd {
