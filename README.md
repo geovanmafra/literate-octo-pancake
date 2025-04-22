@@ -1,5 +1,8 @@
 # literate-octo-pancake
-For personal use | Arch Linux installation with all the packages I use and configurations.
+Arch, Hyprland and waybar configuration | I made this for personal use but feel free to use it, it's basically defaults with sane configurations and intact syntax.
+Pipewire just works and you can use the mouse wheel to turn the volume up/down, it also opens pwvucontrol and blueman onclick as a applet instead of a big tiled window.
+![alt text](https://github.com/geovanmafra/literate-octo-pancake/blob/main/image.png?raw=true)
+
 
 ## Commands
   <details>
