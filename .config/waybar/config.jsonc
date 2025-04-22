@@ -17,8 +17,8 @@
         "clock"
     ],
     "modules-right": [
-        "tray",
         "idle_inhibitor",
+        "tray",
         "wireplumber",
         "cpu",
         "memory",
