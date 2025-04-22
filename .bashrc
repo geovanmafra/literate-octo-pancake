@@ -22,9 +22,5 @@ if [[ "$TERM" == "xterm-ghostty" && ! -f "$HOME/.fastfetch_done" ]]; then
 fi
 #Check if any terminal is still running and remove the flag file only when no other terminal processes are running
 if [[ "$TERM" == "xterm-ghostty" ]]; then
-trap '
-if ! pgrep -x "$TERM" > /dev/null; then
-	rm -f "$HOME/.fastfetch_done"
-	fi
-	' EXIT
+	trap "rm -f .fastfetch_done" EXIT
 fi
