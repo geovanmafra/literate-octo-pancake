@@ -118,6 +118,7 @@ button:hover {
 
 #clock {
     background-color: transparent;
+    margin: 0 300px;
 }
 
 #battery {
