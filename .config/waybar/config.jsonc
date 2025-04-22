@@ -203,6 +203,13 @@
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
+    "hyprland/window": {
+ 	    "format" : "{title}",
+ 	    "rewrite": {
+ 	    	"~": "Ghostty $1",
+ 	    },
+    	"separate-outputs": true
+ 	},
     "custom/power": {
         "format" : "⏻ ",
 		"tooltip": false,
@@ -216,9 +223,3 @@
 		}
     }
 }
-	"hyprland/window": {
- 	    "format": "{class}",
- 	    "icon": true,
-     	},
-    		 "separate-outputs": true
- }
