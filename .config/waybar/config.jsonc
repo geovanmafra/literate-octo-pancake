@@ -17,10 +17,9 @@
         "clock"
     ],
     "modules-right": [
-        "mpd",
-        "idle_inhibitor",
         "tray",
-        "pulseaudio",
+        "idle_inhibitor",
+        "wireplumber",
         "cpu",
         "memory",
         "temperature",
@@ -29,24 +28,19 @@
         "custom/power"
     ],
     // Modules configuration
-    // "hyprland/workspaces": {
-    //     "disable-scroll": false,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "on-scroll-up": "hyprctl dispatch workspace e+1",
-    //     "on-scroll-down": "hyprctl dispatch workspace e-1",
-    //     "format": "{icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+     "hyprland/workspaces": {
+         "disable-scroll": false,
+         "all-outputs": true,
+         "warp-on-scroll": false,
+         "on-scroll-up": "hyprctl dispatch workspace e+1",
+         "on-scroll-down": "hyprctl dispatch workspace e-1",
+         "format": "{icon}",
+         "format-icons": {
+             "urgent": "",
+             "active": "",
+             "default": ""
+         }
+     },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -121,7 +115,7 @@
     },
     "temperature": {
         // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp2_input",
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
@@ -156,9 +150,9 @@
       "tooltip": true,
       "format-icons": {
         "default": "",
-        "performance": "",
-        "balanced": "",
-        "power-saver": ""
+        "performance": "100% ",
+        "balanced": "67% ",
+        "power-saver": "38% "
       }
     },
     "network": {
@@ -187,7 +181,14 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pwvucontrol"
+        "on-click": "pavucontrol"
+    },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-icons": {
+    	"default": ["", "", ""]
+    	},
+    	"on-click": "pwvucontrol"
     },
     "custom/media": {
         "format": "{icon} {text}",
