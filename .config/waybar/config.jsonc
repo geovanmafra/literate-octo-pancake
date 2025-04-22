@@ -113,12 +113,7 @@
     "memory": {
         "format": "{}% "
     },
-	"hyprland/window": {
-	    "format": "{class}",
-	    "icon": true,
-    	},
-   		 "separate-outputs": true
-}
+    
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp2_input",
@@ -221,3 +216,9 @@
 		}
     }
 }
+	"hyprland/window": {
+ 	    "format": "{class}",
+ 	    "icon": true,
+     	},
+    		 "separate-outputs": true
+ }
