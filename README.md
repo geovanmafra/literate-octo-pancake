@@ -40,7 +40,7 @@ pipewire lib32-pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
 ```
 >Other
 ```
-waybar (brightnessctl playerctl) mako wl-clipboard grim slurp [AUR: walker qview]
+waybar (brightnessctl playerctl power-profiles-daemon) mako wl-clipboard grim slurp [AUR: walker qview]
 ```
 >Applets
 ```
