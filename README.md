@@ -28,7 +28,7 @@ Pipewire just works and you can use the mouse wheel to turn the volume up/down, 
 
 > Hyprland
 ```
-hyprland xdg-desktop-portal-hyprland hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper qt5-wayland qt6-wayland uwsm
+hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper qt5-wayland qt6-wayland uwsm
 ```
 >Services
 ```
@@ -79,7 +79,7 @@ keepassxc chromium krita qbittorrent obs-studio
 
 > Gaming
 ```
-lutris dolphin-emu [AUR: ares-emu cemu-git duckstation-git pcsx2]
+lutris bottles dolphin-emu [AUR: ares-emu cemu-git duckstation-git pcsx2]
 ```
 > Wine
 ```
