@@ -181,12 +181,12 @@ set colorscheme twilight
 
 > Extensions
 ```
-Tab Grouper
-UBlock Origin Lite - Canvas Blocker
-Unhook - Return YouTube dislike
-KeePassXC-Browser
-Dark Reader
-Canvas Blocker
+Tab Grouper - https://chromewebstore.google.com/detail/tab-grouper/cejjplkmdfnnlmphbhpbnfmkhkknnokg
+uBlock Origin Lite - https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh
+Unhook - https://chromewebstore.google.com/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid
+KeePassXC-Browser - https://chromewebstore.google.com/detail/keepassxc-browser/oboonakemofpalcgghocfoadofidjkkk
+Dark Reader - https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
+Canvas Blocker - https://chromewebstore.google.com/detail/canvas-blocker-fingerprin/nomnklagbgmgghhjidfhnoelnjfndfpd
 ```
 </details>
 
