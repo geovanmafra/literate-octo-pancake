@@ -71,7 +71,7 @@ Icons: git clone https://github.com/vinceliuice/Colloid-icon-theme ./install.sh 
   
 > Programs
 ```
-keepassxc chromium krita qbittorrent obs-studio
+keepassxc chromium krita qbittorrent obs-studio discord
 ```
 </details>
 
