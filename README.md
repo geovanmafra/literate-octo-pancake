@@ -32,7 +32,7 @@ hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpolkitagent hypr
 ```
 >Other
 ```
-zenity waybar (brightnessctl playerctl power-profiles-daemon) mako wl-clipboard grim slurp [AUR: walker qview]
+zenity dconf-editor waybar (brightnessctl playerctl power-profiles-daemon) mako wl-clipboard grim slurp [AUR: walker qview]
 ```
 >Audio
 ```
