@@ -79,7 +79,7 @@ keepassxc chromium krita qbittorrent obs-studio
 
 > Gaming
 ```
-lutris dolphin-emu [AUR: ares-emu cemu-git duckstation-git pcsx2]
+lutris dolphin-emu [AUR: ares-emu cemu pcsx2]
 for some reason bottles only work without errors if you build it with these packages: yay -S bottles gamemode gvfs lib32-gamemode lib32-gnutls lib32-vkd3d lib32-vulkan-icd-loader vkd3d vulkan-icd-loader wine-tkg-staging-ntsync-bin
 ```
 > Wine
