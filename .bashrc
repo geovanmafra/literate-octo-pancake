@@ -9,18 +9,14 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-#Sudo auto complete
 complete -cf sudo
 
-#Theme for micro
-export "MICRO_TRUECOLOR=1"
-
-#Fastfetch
+#Fastfetch ASCII
 if [[ "$TERM" == "xterm-ghostty" && ! -f "$HOME/.fastfetch_done" ]]; then
 	fastfetch
 	touch "$HOME/.fastfetch_done"
 fi
-#Check if any terminal is still running and remove the flag file only when no other terminal processes are running
+#Check if terminal is running and remove the flag file
 if [[ "$TERM" == "xterm-ghostty" ]]; then
 	trap "rm -f .fastfetch_done" EXIT
 fi
