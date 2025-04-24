@@ -30,6 +30,22 @@ Pipewire just works and you can use the mouse wheel to turn the volume up/down, 
 ```
 hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper qt5-wayland qt6-wayland uwsm
 ```
+>Other
+```
+zenity waybar (brightnessctl playerctl power-profiles-daemon) mako wl-clipboard grim slurp [AUR: walker qview]
+```
+>Audio
+```
+pipewire lib32-pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
+```
+>Applets
+```
+udiskie network-manager-applet blueman [AUR: pwvucontrol]
+```
+> System utilities
+```
+git wget ghostty yazi trashcli unrar btop fastfetch mpv fuse2 (for appimage)
+```
 >Services
 ```
 systemctl --user enable --now waybar.service
@@ -38,30 +54,14 @@ systemctl --user enable --now hyprpaper.service
 systemctl --user enable --now hypridle.service
 systemctl enable --now blueetoth.service
 ```
->Audio
-```
-pipewire lib32-pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
-```
->Other
-```
-zenity waybar (brightnessctl playerctl power-profiles-daemon) mako wl-clipboard grim slurp [AUR: walker qview]
-```
->Applets
-```
-udiskie network-manager-applet blueman [AUR: pwvucontrol]
-```
 >Theming
 ```
-nwg-look (gtk-engine-murrine gnome-themes-extra or gnome-themes-standard [build dependency: sassc)
-Fonts: noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+nwg-look
+Fonts: noto-fonts noto-fonts-cjk noto-fonts-emoji
+Cursor: https://github.com/ndom91/rose-pine-hyprcursor
 Theme: git clone https://github.com/vinceliuice/Colloid-gtk-theme ./install.sh --tweaks black rimless -n Everforest -t green -c dark -l
 Icons: git clone https://github.com/vinceliuice/Colloid-icon-theme ./install.sh -s everforest -t green
-Cursor: https://github.com/ndom91/rose-pine-hyprcursor
-Micro: https://github.com/atomashevic/everforest-micro
-```
-> System utilities
-```
-git wget ghostty yazi trashcli unrar btop fastfetch mpv fuse2 (for appimage)
+(gtk-engine-murrine gnome-themes-extra or gnome-themes-standard [build dependency: sassc)
 ```
 </details>
 
@@ -177,57 +177,7 @@ set colorscheme twilight
 </details>
 
 <details>
-  <summary>6. Yazi</summary>
-
-> File manager
-```
-# yazi.toml
-[manager]
-show_hidden = true
-
-[opener]
-play = [
-	{ run = 'mpv "$@"', orphan = true, for = "unix" },
-]
-edit = [
-	{ run = 'micro "$@"', block = true, for = "unix" },
-]
-open = [
-	{ run = 'xdg-open "$@"', desc = "Open" },
-]
-
-[open]
-prepend_rules = [
-	{ name = "*.json", use = "edit" },
-	{ name = "*.sh", use = "edit" },
-	{ name = "*.toml", use = "edit" },
-	{ name = "*.y*ml", use = "edit" },
-	{ name = "*config", use = "edit" },
-	{ name = "*.cfg", use = "edit" },
-	{ name = "*env", use = "edit" },
-	{ name = "*.d", use = "edit" },
-	{ name = "*.md", use = "edit" },
-	{ name = "*.txt", use = "edit" },
-	{ name = ".zsh*", use = "edit" },
-	{ name = "*.ini", use = "edit" },
-	{ name = "*.lua", use = "edit" },
-	{ name = "*.xml", use = "edit" },
-	{ name = "*.log", use = "edit" },
-# open with normal / gnome / kde
-	{ name = "*.ods", use = "open" },
-	{ name = "*.pdf", use = "open" },
-# open with multimedia player
-	{ name = "*.mp3", use = "open" },
-
-]
-append_rules = [
-	{ name = "*", use = "edit" },
-]
-```
-</details>
-
-<details>
-  <summary>7. Chromium</summary>
+  <summary>6. Chromium</summary>
 
 > Extensions
 ```
@@ -236,11 +186,12 @@ UBlock Origin Lite - Canvas Blocker
 Unhook - Return YouTube dislike
 KeePassXC-Browser
 Dark Reader
+Canvas Blocker
 ```
 </details>
 
 <details>
-  <summary>8. yay</summary>
+  <summary>7. yay</summary>
 
 > AUR helper
 ```
@@ -253,114 +204,6 @@ makepkg -si
 yay -Y --gendb
 yay -Syu --devel
 yay -Y --devel --save
-```
-</details>
-<details>
-  <summary>9. Mime</summary>
-
-> .config/mimeapps.list
-```
-[Added Associations]
-application/json=micro.desktop;/home/kuriboh/.local/share/applications/Micro.desktop;
-application/pdf=chromium.desktop;com.interversehq.qView.desktop;pqiv.desktop;
-application/x-docbook+xml=micro.desktop;/home/kuriboh/.local/share/applications/Micro.desktop;chromium.desktop;
-application/x-matroska=mpv.desktop;
-application/x-yaml=micro.desktop;/home/kuriboh/.local/share/applications/Micro.desktop;
-image/avif=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
-image/bmp=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
-image/gif=com.interversehq.qView.desktop;qimgv.desktop;imv.desktop;nsxiv.desktop;pqiv.desktop;feh.desktop;imv-dir.desktop;org.kde.gwenview.desktop;chromium.desktop;krita_gif.desktop;
-image/heif=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
-image/jpeg=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
-image/png=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
-image/webp=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
-image/x-icns=com.interversehq.qView.desktop;pqiv-2.desktop;imv.desktop;feh.desktop;qimgv.desktop;mpv.desktop;
-inode/directory=yazi.desktop;spf.desktop;
-text/markdown=micro.desktop;/home/kuriboh/.local/share/applications/Micro.desktop;
-text/plain=micro.desktop;/home/kuriboh/.local/share/applications/Micro.desktop;Micro.desktop;
-text/x-cmake=micro.desktop;/home/kuriboh/.local/share/applications/Micro.desktop;
-video/3gp=mpv.desktop;
-video/3gpp=mpv.desktop;
-video/3gpp2=mpv.desktop;
-video/avi=mpv.desktop;
-video/divx=mpv.desktop;
-video/dv=mpv.desktop;
-video/fli=mpv.desktop;
-video/flv=mpv.desktop;
-video/mp2t=mpv.desktop;
-video/mp4=mpv.desktop;
-video/mp4v-es=mpv.desktop;
-video/mpeg=mpv.desktop;
-video/msvideo=mpv.desktop;
-video/ogg=mpv.desktop;
-video/quicktime=mpv.desktop;
-video/vnd.divx=mpv.desktop;
-video/vnd.mpegurl=mpv.desktop;
-video/vnd.rn-realvideo=mpv.desktop;
-video/webm=mpv.desktop;
-video/x-avi=mpv.desktop;
-video/x-flv=mpv.desktop;
-video/x-m4v=mpv.desktop;
-video/x-matroska=mpv.desktop;
-video/x-mpeg2=mpv.desktop;
-video/x-ms-asf=mpv.desktop;
-video/x-ms-wmv=mpv.desktop;
-video/x-ms-wmx=mpv.desktop;
-video/x-msvideo=mpv.desktop;
-video/x-ogm=mpv.desktop;
-video/x-ogm+ogg=mpv.desktop;
-video/x-theora=mpv.desktop;
-video/x-theora+ogg=mpv.desktop;
-
-[Default Applications]
-application/json=micro.desktop;
-application/pdf=chromium.desktop;
-application/x-docbook+xml=micro.desktop;
-application/x-matroska=mpv.desktop;
-application/x-yaml=micro.desktop;
-image/avif=com.interversehq.qView.desktop;
-image/bmp=com.interversehq.qView.desktop;
-image/gif=com.interversehq.qView.desktop;
-image/heif=com.interversehq.qView.desktop;
-image/jpeg=com.interversehq.qView.desktop;
-image/png=com.interversehq.qView.desktop;
-image/webp=com.interversehq.qView.desktop;
-image/x-icns=com.interversehq.qView.desktop;
-inode/directory=yazi.desktop;
-text/markdown=micro.desktop;
-text/plain=micro.desktop;
-text/x-cmake=micro.desktop;
-video/3gp=mpv.desktop;
-video/3gpp=mpv.desktop;
-video/3gpp2=mpv.desktop;
-video/avi=mpv.desktop;
-video/divx=mpv.desktop;
-video/dv=mpv.desktop;
-video/fli=mpv.desktop;
-video/flv=mpv.desktop;
-video/mp2t=mpv.desktop;
-video/mp4=mpv.desktop;
-video/mp4v-es=mpv.desktop;
-video/mpeg=mpv.desktop;
-video/msvideo=mpv.desktop;
-video/ogg=mpv.desktop;
-video/quicktime=mpv.desktop;
-video/vnd.divx=mpv.desktop;
-video/vnd.mpegurl=mpv.desktop;
-video/vnd.rn-realvideo=mpv.desktop;
-video/webm=mpv.desktop;
-video/x-avi=mpv.desktop;
-video/x-flv=mpv.desktop;
-video/x-m4v=mpv.desktop;
-video/x-matroska=mpv.desktop;
-video/x-mpeg2=mpv.desktop;
-video/x-ms-asf=mpv.desktop;
-video/x-ms-wmv=mpv.desktop;
-video/x-ms-wmx=mpv.desktop;
-video/x-msvideo=mpv.desktop;
-video/x-ogm=mpv.desktop;
-video/x-ogm+ogg=mpv.desktop;
-video/x-theora=mpv.desktop;
-video/x-theora+ogg=mpv.desktop;
 ```
 </details>
 </details>
@@ -399,7 +242,7 @@ GPT
 MAX LINUX x86_64 ROOT p4
 ```
 ```
-mkfs.xfs /dev/nvme0n1p4
+mkfs.xfs -f /dev/nvme0n1p4
 mkswap /dev/nvme0n1p3
 mkfs.fat -F 32 /dev/nvme0n1p2
 mkfs.fat -F 32 /dev/nvme0n1p1
