@@ -1,2 +1,3 @@
 export XCURSOR_SIZE=24
+export XCURSOR_THEME=rose-pine-xcursor
 export ELECTRON_OZONE_PLATFORM_HINT=auto
