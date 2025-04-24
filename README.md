@@ -58,7 +58,8 @@ systemctl enable --now blueetoth.service
 ```
 nwg-look
 Fonts: noto-fonts noto-fonts-cjk noto-fonts-emoji
-Cursor: https://github.com/ndom91/rose-pine-hyprcursor
+Hyprcursor: https://github.com/ndom91/rose-pine-hyprcursor
+Xcursor: https://github.com/rose-pine/cursor
 Theme: git clone https://github.com/vinceliuice/Colloid-gtk-theme ./install.sh --tweaks black rimless -n Everforest -t green -c dark -l
 Icons: git clone https://github.com/vinceliuice/Colloid-icon-theme ./install.sh -s everforest -t green
 (gtk-engine-murrine gnome-themes-extra or gnome-themes-standard [build dependency: sassc)
