@@ -28,7 +28,7 @@ Pipewire just works and you can use the mouse wheel to turn the volume up/down, 
 
 > Hyprland
 ```
-hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper qt5-wayland qt6-wayland uwsm
+hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper hyprpicker qt5-wayland qt6-wayland uwsm
 ```
 >Other
 ```
