@@ -130,13 +130,6 @@ ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin kuriboh %I $TERM
 ```
 > Start Hyprland session
 ```
-Normal session:
-micro ~/.bash_profile
-
-if [ -z "${WAYLAND_DISPLAY}" ] && [ "$(tty)" = "/dev/tty1" ]; then
-    exec hyprland
-fi
-
 UWSM session:
 micro ~/.bash_profile
 
@@ -185,6 +178,17 @@ set colorscheme twilight
 > Extensions
 ```
 Tab Grouper - https://chromewebstore.google.com/detail/tab-grouper/cejjplkmdfnnlmphbhpbnfmkhkknnokg
+! Group YouTube tabs
+||youtube.com YouTube red
+
+! Group all the weeb shit
+||hianimez.to A green
+||mangadex.org M green
+||toonclash.com M green
+||mangabuddy.com M green
+||manhuatop.org M green
+
+
 uBlock Origin Lite - https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh
 Unhook - https://chromewebstore.google.com/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid
 KeePassXC-Browser - https://chromewebstore.google.com/detail/keepassxc-browser/oboonakemofpalcgghocfoadofidjkkk
