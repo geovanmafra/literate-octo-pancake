@@ -28,23 +28,23 @@ Pipewire just works and you can use the mouse wheel to turn the volume up/down, 
 
 > Hyprland
 ```
-hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper hyprpicker qt5-wayland qt6-wayland uwsm
+hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper hyprpicker hyprland-qt-support uwsm
 ```
 >Other
 ```
-zenity dconf-editor waybar (brightnessctl playerctl power-profiles-daemon) mako wl-clipboard grim slurp [AUR: walker qview]
+zenity dconf-editor waybar brightnessctl playerctl mako jq wl-clipboard grim slurp wofi [AUR: qview]
 ```
 >Audio
 ```
-pipewire lib32-pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
+pipewire lib32-pipewire lib32-pipewire-jack lib32-pipewire-v4l2 pipewire v4l2 pipewire-alsa pipewire-pulse pipewire-jack pipewire-ffado pipewire-audio rtkit wireplumber gst-plugin-pipewire noise-suppression-for-voice lib32-libpulse lib32-alsa-lib lib32-alsa-plugins
 ```
 >Applets
 ```
-udiskie network-manager-applet blueman [AUR: pwvucontrol]
+udiskie libappindicator-gtk3 network-manager-applet blueman [AUR: pwvucontrol]
 ```
 > System utilities
 ```
-git wget ghostty yazi trashcli unrar btop fastfetch mpv fuse2 (for appimage)
+git wget ca-certificates ghostty yazi 7zip unrar chafa fd ffmpeg fzf imagemagick poppler trash-cli btop rocm-smi-lib fastfetch mpv fuse2
 ```
 >Services
 ```
@@ -56,13 +56,11 @@ systemctl enable --now blueetoth.service
 ```
 >Theming
 ```
-nwg-look
 Fonts: noto-fonts noto-fonts-cjk noto-fonts-emoji
-Hyprcursor: https://github.com/ndom91/rose-pine-hyprcursor
 Xcursor: https://github.com/rose-pine/cursor
-Theme: git clone https://github.com/vinceliuice/Colloid-gtk-theme ./install.sh --tweaks black rimless -n Everforest -t green -c dark -l
-Icons: git clone https://github.com/vinceliuice/Colloid-icon-theme ./install.sh -s everforest -t green
-(gtk-engine-murrine gnome-themes-extra or gnome-themes-standard [build dependency: sassc)
+Hyprcursor: https://github.com/ndom91/rose-pine-hyprcursor
+Theme: https://www.pling.com/p/1661959  //  https://www.pling.com/p/1681313/
+Icons: https://www.pling.com/p/1661983  //  https://www.pling.com/p/1681460
 ```
 </details>
 
@@ -71,7 +69,7 @@ Icons: git clone https://github.com/vinceliuice/Colloid-icon-theme ./install.sh 
   
 > Programs
 ```
-keepassxc chromium krita qbittorrent obs-studio discord
+keepassxc chromium gtk4 krita libmypaint libjxl libheif poppler-qt5 python-pyqt5 krita-plugin-gmic kimageformats5 kseexpr qbittorrent python obs-studio libfdk-aac sndio discord xdg-utils
 ```
 </details>
 
@@ -80,20 +78,24 @@ keepassxc chromium krita qbittorrent obs-studio discord
 
 > Gaming
 ```
-lutris dolphin-emu [AUR: ares-emu cemu pcsx2]
+dolphin-emu [AUR: ares-emu cemu pcsx2]
 for some reason bottles only work without errors if you build it with these packages: yay -S bottles gamemode gvfs lib32-gamemode lib32-gnutls lib32-vkd3d lib32-vulkan-icd-loader vkd3d vulkan-icd-loader wine-tkg-staging-ntsync-bin
 ```
 > Wine
 ```
-wine wine-mono winetricks lib32-gnutls
+wine wine-gecko wine-mono winetricks lib32-gnutls
 ```
 > Drivers
 ```
-mesa lib32-mesa mesa-utils vulkan-radeon lib32-vulkan-radeon gamescope
+mesa lib32-mesa lib32-vulkan-mesa-layers vulkan-radeon lib32-vulkan-radeon mesa-utils
 ```
 > Vulkan utilities
 ```
 vulkan-icd-loader lib32-vulkan-icd-loader vulkan-tools
+```
+>Lutris
+```
+lutris fluidsynth gamescope gamemode lib32-gamemode lib32-vk3d umu-launcher
 ```
 </details>
 </details>
