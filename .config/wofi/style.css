@@ -1,0 +1,15 @@
+#window {
+	background-color: rgba(53, 53, 53, 0.8);
+	color: #EEEEEC;
+	border-radius: 10px;
+}
+
+image {
+	margin-left: .25cm;
+	margin-right: .25cm;
+}
+
+#input {
+	background-color: #353535;
+	border-radius: 10px;
+}
