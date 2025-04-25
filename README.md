@@ -59,8 +59,9 @@ systemctl enable --now blueetoth.service
 Fonts: noto-fonts noto-fonts-cjk noto-fonts-emoji
 Xcursor: https://github.com/rose-pine/cursor
 Hyprcursor: https://github.com/ndom91/rose-pine-hyprcursor
-Theme: https://www.pling.com/p/1661959  //  https://www.pling.com/p/1681313/
-Icons: https://www.pling.com/p/1661983  //  https://www.pling.com/p/1681460
+Theme: https://www.pling.com/p/1661959  Colloid-Gruvbox.tar.xz
+Icons: https://www.pling.com/p/1661983  Colloid-Green.tar.xz
+Firefox: https://addons.mozilla.org/en-GB/firefox/addon/gruvbox-d-h/
 ```
 </details>
 
