@@ -56,6 +56,7 @@ systemctl enable --now blueetoth.service
 ```
 >Theming
 ```
+To apply the themes just open dconf-editor and go to /org/gnome/desktop/interface/ and change the accent-color, color-scheme, gtk-theme and icon-theme
 Fonts: noto-fonts noto-fonts-cjk noto-fonts-emoji
 Xcursor: https://github.com/rose-pine/cursor
 Hyprcursor: https://github.com/ndom91/rose-pine-hyprcursor
