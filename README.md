@@ -32,7 +32,7 @@ hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpolkitagent hypr
 ```
 >Other
 ```
-zenity dconf-editor waybar brightnessctl playerctl mako jq wl-clipboard grim slurp wofi [AUR: qview]
+zenity qt5ct qt6ct dconf-editor waybar brightnessctl playerctl mako jq wl-clipboard grim slurp wofi [AUR: qview]
 ```
 >Audio
 ```
