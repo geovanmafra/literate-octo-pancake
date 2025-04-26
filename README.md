@@ -60,7 +60,7 @@ Fonts: noto-fonts noto-fonts-cjk noto-fonts-emoji
 Xcursor: https://github.com/rose-pine/cursor
 Hyprcursor: https://github.com/ndom91/rose-pine-hyprcursor
 Theme: https://www.pling.com/p/1661959  Colloid-Gruvbox.tar.xz
-Icons: https://www.pling.com/p/1661983  Colloid-Green.tar.xz
+Icons: https://www.pling.com/p/1961046/  gruvbox-plus-icon-pack.6.2.0.tar.gz
 Firefox: https://addons.mozilla.org/en-GB/firefox/addon/gruvbox-d-h/
 ```
 </details>
