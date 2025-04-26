@@ -70,7 +70,7 @@ Firefox: https://addons.mozilla.org/en-GB/firefox/addon/gruvbox-d-h/
   
 > Programs
 ```
-keepassxc chromium gtk4 krita libmypaint libjxl libheif poppler-qt5 python-pyqt5 krita-plugin-gmic kimageformats5 kseexpr qbittorrent python obs-studio libfdk-aac sndio discord xdg-utils
+keepassxc firefox krita libmypaint libjxl libheif poppler-qt5 python-pyqt5 krita-plugin-gmic kimageformats5 kseexpr qbittorrent python obs-studio libfdk-aac sndio discord xdg-utils
 ```
 </details>
 
@@ -174,27 +174,16 @@ set colorscheme twilight
 </details>
 
 <details>
-  <summary>6. Chromium</summary>
+  <summary>6. Firefox</summary>
 
 > Extensions
 ```
-Tab Grouper - https://chromewebstore.google.com/detail/tab-grouper/cejjplkmdfnnlmphbhpbnfmkhkknnokg
-! Group YouTube tabs
-||youtube.com YouTube red
-
-! Group all the weeb shit
-||hianimez.to A green
-||mangadex.org M green
-||toonclash.com M green
-||mangabuddy.com M green
-||manhuatop.org M green
-
-
-uBlock Origin Lite - https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh
-Unhook - https://chromewebstore.google.com/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid
-KeePassXC-Browser - https://chromewebstore.google.com/detail/keepassxc-browser/oboonakemofpalcgghocfoadofidjkkk
-Dark Reader - https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
-Canvas Blocker - https://chromewebstore.google.com/detail/canvas-blocker-fingerprin/nomnklagbgmgghhjidfhnoelnjfndfpd
+uBlock Origin
+Unhook - Remove YouTube
+KeePassXC-Browser
+Dark Reader
+Canvas Blocker
+Search by Image
 ```
 </details>
 
