@@ -184,6 +184,11 @@ KeePassXC-Browser
 Dark Reader
 Canvas Blocker
 Search by Image
+
+about:config
+browser.tabs.groups.enabled
+browser.tabs.allow_transparent_browser
+toolkit.legacyUserProfileCustomizations.stylesheets
 ```
 </details>
 
