@@ -8,11 +8,12 @@
         }
     },
   "modules": [
+	"title",
+	"separator",
     "os",
     "host",
     "kernel",
     "packages",
-    "de",
     "wm",
     "wmtheme",
     "theme",
@@ -27,7 +28,7 @@
     "localip",
     "battery",
     "poweradapter",
-    "break",
-    "colors"
+    "separator",
+    "break"
   ]
 }
