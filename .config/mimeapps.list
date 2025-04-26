@@ -1,6 +1,6 @@
 [Added Associations]
 application/json=micro.desktop;
-application/pdf=chromium.desktop;
+application/pdf=firefox.desktop;
 application/x-docbook+xml=micro.desktop;
 application/x-matroska=mpv.desktop;
 application/x-yaml=micro.desktop;
@@ -53,7 +53,7 @@ video/x-theora+ogg=mpv.desktop;
 
 [Default Applications]
 application/json=micro.desktop;
-application/pdf=chromium.desktop;
+application/pdf=firefox.desktop;
 application/x-docbook+xml=micro.desktop;
 application/x-matroska=mpv.desktop;
 application/x-yaml=micro.desktop;
@@ -103,3 +103,4 @@ video/x-ogm=mpv.desktop;
 video/x-ogm+ogg=mpv.desktop;
 video/x-theora=mpv.desktop;
 video/x-theora+ogg=mpv.desktop;
+x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
