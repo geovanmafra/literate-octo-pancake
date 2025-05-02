@@ -44,7 +44,7 @@ udiskie libappindicator-gtk3 network-manager-applet blueman [AUR: pwvucontrol]
 ```
 > System utilities
 ```
-git wget ca-certificates ghostty yazi 7zip unrar chafa fd ffmpeg fzf imagemagick poppler trash-cli btop rocm-smi-lib fastfetch mpv fuse2
+git wget ca-certificates ghostty yazi 7zip unrar chafa fd ffmpeg fzf imagemagick poppler trash-cli btop rocm-smi-lib fastfetch mpv fuse2 net-tools isoimagewriter openssh
 ```
 >Services
 ```
