@@ -71,7 +71,7 @@ Firefox: https://addons.mozilla.org/en-GB/firefox/addon/gruvbox-d-h/
   
 > :p
 ```
-keepassxc firefox krita libmypaint libjxl libheif poppler-qt5 python-pyqt5 krita-plugin-gmic kimageformats5 kseexpr qbittorrent python obs-studio libfdk-aac sndio discord xdg-utils [AUR: neothesia]
+keepassxc firefox krita libmypaint libjxl libheif poppler-qt5 python-pyqt5 krita-plugin-gmic kimageformats5 kseexpr qbittorrent python obs-studio libfdk-aac sndio discord xdg-utils [AUR: anki-bin neothesia]
 ```
 </details>
 
