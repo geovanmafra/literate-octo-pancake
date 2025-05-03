@@ -67,16 +67,16 @@ Firefox: https://addons.mozilla.org/en-GB/firefox/addon/gruvbox-d-h/
 </details>
 
 <details>
-  <summary>2. Essential</summary>
+  <summary>2. Programs I use daily</summary>
   
-> Programs I use
+> :p
 ```
 keepassxc firefox krita libmypaint libjxl libheif poppler-qt5 python-pyqt5 krita-plugin-gmic kimageformats5 kseexpr qbittorrent python obs-studio libfdk-aac sndio discord xdg-utils [AUR: neothesia]
 ```
 </details>
 
 <details>
-  <summary>3. Drivers and Windows compatibility layer</summary>
+  <summary>3. Drivers, Gaming and Windows compatibility layer</summary>
 
 > Gaming
 ```
