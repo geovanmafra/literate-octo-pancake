@@ -80,7 +80,7 @@ keepassxc firefox krita libmypaint libjxl libheif poppler-qt5 python-pyqt5 krita
 
 > Gaming
 ```
-[Emulators: dolphin-emu ppsspp [AUR: ares-emu cemu-git pcsx2]
+[Emulators: dolphin-emu ppsspp [AUR: ares-emu cemu-bin pcsx2-latest-bin]
 [Lutris: lutris fluidsynth gamescope gamemode lib32-gamemode lib32-vk3d umu-launcher]
 [AUR-Bottles: yay -S bottles gamemode gvfs lib32-gamemode lib32-gnutls lib32-vkd3d lib32-vulkan-icd-loader vkd3d vulkan-icd-loader wine-tkg-staging-ntsync-bin]
 ```
