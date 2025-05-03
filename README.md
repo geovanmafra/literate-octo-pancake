@@ -7,7 +7,7 @@ Pipewire just works and you can use the mouse wheel to turn the volume up/down, 
 
 ## Commands
   <details>
-    <summary>1. Pacman</summary>
+    <summary>1. Pacman cheatsheet</summary>
 
 > Pacman
 ```
@@ -30,9 +30,9 @@ Pipewire just works and you can use the mouse wheel to turn the volume up/down, 
 ```
 hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpolkitagent hyprcursor hyprlock hypridle hyprpaper hyprpicker hyprland-qt-support uwsm
 ```
->Other
+>Dialog, theme editors, bar with functions, application launcher, notifications and screenshots
 ```
-zenity qt5ct qt6ct dconf-editor waybar brightnessctl playerctl mako jq wl-clipboard grim slurp wofi [AUR: qview]
+zenity qt5ct qt6ct dconf-editor waybar brightnessctl playerctl wofi mako jq wl-clipboard grim slurp
 ```
 >Audio
 ```
@@ -44,7 +44,7 @@ udiskie libappindicator-gtk3 network-manager-applet blueman [AUR: pwvucontrol]
 ```
 > System utilities
 ```
-git wget ca-certificates ghostty yazi 7zip unrar chafa fd ffmpeg fzf imagemagick poppler trash-cli btop rocm-smi-lib fastfetch mpv fuse2 net-tools isoimagewriter openssh
+git wget ca-certificates ghostty yazi 7zip unrar chafa fd ffmpeg fzf imagemagick poppler trash-cli btop rocm-smi-lib fastfetch mpv fuse2 net-tools isoimagewriter openssh [AUR: qview]
 ```
 >Services
 ```
@@ -56,7 +56,7 @@ systemctl enable --now blueetoth.service
 ```
 >Theming
 ```
-To apply the themes just open dconf-editor and go to /org/gnome/desktop/interface/ and change the accent-color, color-scheme, gtk-theme and icon-theme
+To apply the themes just open dconf-editor and go to /org/gnome/desktop/interface/ and change the accent-color, color-scheme, gtk-theme and icon-theme (for QT use qt5ct and qt6ct)
 Fonts: noto-fonts noto-fonts-cjk noto-fonts-emoji
 Xcursor: https://github.com/rose-pine/cursor
 Hyprcursor: https://github.com/ndom91/rose-pine-hyprcursor
@@ -69,9 +69,9 @@ Firefox: https://addons.mozilla.org/en-GB/firefox/addon/gruvbox-d-h/
 <details>
   <summary>2. Essential</summary>
   
-> Programs
+> Programs I use
 ```
-keepassxc firefox krita libmypaint libjxl libheif poppler-qt5 python-pyqt5 krita-plugin-gmic kimageformats5 kseexpr qbittorrent python obs-studio libfdk-aac sndio discord xdg-utils
+keepassxc firefox krita libmypaint libjxl libheif poppler-qt5 python-pyqt5 krita-plugin-gmic kimageformats5 kseexpr qbittorrent python obs-studio libfdk-aac sndio discord xdg-utils [AUR: neothesia]
 ```
 </details>
 
@@ -80,8 +80,9 @@ keepassxc firefox krita libmypaint libjxl libheif poppler-qt5 python-pyqt5 krita
 
 > Gaming
 ```
-dolphin-emu ppsspp [AUR: ares-emu cemu pcsx2 neothesia]
-for some reason bottles only work without errors if you build it with these packages: yay -S bottles gamemode gvfs lib32-gamemode lib32-gnutls lib32-vkd3d lib32-vulkan-icd-loader vkd3d vulkan-icd-loader wine-tkg-staging-ntsync-bin
+[Emulators: dolphin-emu ppsspp [AUR: ares-emu cemu-git pcsx2]
+[Lutris: lutris fluidsynth gamescope gamemode lib32-gamemode lib32-vk3d umu-launcher]
+[AUR-Bottles: yay -S bottles gamemode gvfs lib32-gamemode lib32-gnutls lib32-vkd3d lib32-vulkan-icd-loader vkd3d vulkan-icd-loader wine-tkg-staging-ntsync-bin]
 ```
 > Wine
 ```
@@ -94,10 +95,6 @@ mesa lib32-mesa lib32-vulkan-mesa-layers vulkan-radeon lib32-vulkan-radeon mesa-
 > Vulkan utilities
 ```
 vulkan-icd-loader lib32-vulkan-icd-loader vulkan-tools
-```
->Lutris
-```
-lutris fluidsynth gamescope gamemode lib32-gamemode lib32-vk3d umu-launcher
 ```
 </details>
 </details>
