@@ -16,6 +16,11 @@ Pipewire just works and you can use the mouse wheel to turn the volume up/down, 
 -Rs package_name (remove a package and its dependencies which are not required by any other installed package)
 -Rsc package_name (remove a package, its dependencies and all the packages that depend on the target package)
 ```
+> yay
+```
+-Qm (list all packages installed locally)
+-Sc (clear cache)
+```
 </details>
 
 
