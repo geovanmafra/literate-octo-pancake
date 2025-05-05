@@ -21,6 +21,13 @@ Pipewire just works and you can use the mouse wheel to turn the volume up/down, 
 -Qm (list all packages installed locally)
 -Sc (clear cache)
 ```
+> Trash and space management
+```
+trash-list
+trash-empty
+df -h
+du -hs ~/file
+```
 </details>
 
 
