@@ -244,25 +244,23 @@ timedatectl set-timezone America/Sao_Paulo
 ```
 ### Format the partitions
 ```
-cfdisk -z /dev/nvme0n1
-GPT
-128M EFI SYSTEM PARTITION p1
-512M LINUX EXTENDED BOOT p2
-4G LINUX SWAP p3
-MAX LINUX x86_64 ROOT p4
+# cfdisk -z /dev/nvme0n1
+GPT LAYOUT
+PARTITION | SIZE | TYPE
+nvme0n1p1   512M   EFI SYSTEM PARTITION
+nvme0n1p2   MAXX   LINUX x86_64 ROOT
 ```
 ```
-mkfs.xfs -f /dev/nvme0n1p4
-mkswap /dev/nvme0n1p3
-mkfs.fat -F 32 /dev/nvme0n1p2
-mkfs.fat -F 32 /dev/nvme0n1p1
+# mkfs.xfs -f -L ARCH /dev/nvme0n1p2
+# mkfs.fat -F 32 /dev/nvme0n1p1
+# fatlabel /dev/nvme0n1p1 EFI
 ```
 ### Mount the file systems
 ```
-mount /dev/nvme0n1p4 /mnt
-mount --mkdir /dev/nvme0n1p1 /mnt/efi
-mount --mkdir /dev/nvme0n1p2 /mnt/boot
-swapon /dev/nvme0n1p3
+# mount /dev/disk/by-label/ARCH /mnt
+# mount --mkdir /dev/disk/by-label/EFI /mnt/efi
+# mkswap -U clear --size 16G --file /mnt/swapfile
+# swapon /mnt/swapfile
 ```
 </details>
 
@@ -272,7 +270,7 @@ swapon /dev/nvme0n1p3
   
 ### Install essential packages
 ```
-pacstrap -K /mnt base linux-zen linux-zen-headers linux-firmware sof-firmware amd-ucode micro base-devel networkmanager xfsprogs
+# pacstrap -K /mnt base base-devel linux-zen linux-firmware sof-firmware amd-ucode xfsprogs networkmanager micro git
 ```
 </details>
 
@@ -281,23 +279,18 @@ pacstrap -K /mnt base linux-zen linux-zen-headers linux-firmware sof-firmware am
   <summary>3. Configure the system</summary>
   
 ### Fstab
-> Generate an fstab file (use -U or -L to define by UUID or labels, respectively):
 ```
-genfstab -U /mnt >> /mnt/etc/fstab
+# genfstab -L /mnt >> /mnt/etc/fstab
+# micro /mnt/etc/fstab <- Add the swap entry
+  /swapfile none swap defaults 0 0
 ```
-> Check the resulting /mnt/etc/fstab file, and edit it in case of errors.
 ### Chroot
-> Change root into the new system:
 ```
 arch-chroot /mnt
 ```
 ### Time
-> Set the time zone:
 ```
 ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
-```
-> Run hwclock to generate /etc/adjtime:
-```
 hwclock --systohc
 ```
 > This command assumes the hardware clock is set to UTC.
